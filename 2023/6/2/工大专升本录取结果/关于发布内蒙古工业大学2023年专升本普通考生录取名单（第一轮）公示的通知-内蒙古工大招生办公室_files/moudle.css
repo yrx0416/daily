@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+a,body,dd,div,dl,dt,em,form,h1,h2,h3,h4,h5,h6,img,input,li,ol,option,p,select,span,strong,table,td,textarea,th,ul,var{margin:0;padding:0}body,html{font:400 100% "微软雅黑",Arail,Tabhoma;text-align:left;color:#535353;-webkit-font-smoothing:antialiased;line-height:normal}ol,ul{list-style:none}img{border:0;vertical-align:top}input,select,textarea{outline:0}textarea{resize:none}table{border-collapse:collapse;border-spacing:0}em,th,var{font-weight:400;font-style:normal}a{text-decoration:none;color:#555}a,input{-webkit-tap-highlight-color:transparent}
+
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content:'';display:block;clear:both}
+/*-----招生首页-----*/
+.header { width:100%; background:#f6f5fe;}
+.imau-top{width:1200px;margin:0 auto;padding:20px 0;position: relative}
+.school-logo {width:500px; float:left;}
+.school-top-link{width:700px; float:right;}
+.school-top-link ul{ width:665px; margin-left:35px;}
+.school-top-link ul li{width:95px; float:left; line-height:76px;  border-bottom: 4px solid transparent;}
+/*.school-top-link ul li:nth-child(7n){margin-right:0}*/
+.school-top-link ul li a{font-size:18px;color:#555; text-align:center; height:76px; display:block;}
+.school-top-link ul li a:hover{border-bottom:4px solid #09882f; width:auto; margin:0 auto; text-align:center;}
+.school-top-link ul li:hover a{color:#09882F}
+
+
+.imau-search{width:1200px;margin: 0 auto;height:450px;min-width:1200px;position:relative}
+.imau-search .bd, .imau-search .bd ul, .imau-search .bd ul li img{height: 450px;}
+.imau-search .bd ul li img{width: 100%;}
+.imau-search .hd{position:absolute;left:0;bottom:15px;text-align:center;width:100%;z-index:100}
+.imau-search .hd ul{display:inline-block}
+.imau-search .hd ul li{width:18px;height:18px;background:#fff;border-radius:50%;cursor:pointer;float:left;margin-right:10px;box-sizing:border-box}
+.imau-search .hd ul li.on{border:3px solid #57c779}
+.imau-search .hd ul li:last-child{margin-right:0}
+.search-content{width:1200px;height:480px;position:absolute;top:0;left:50%;margin-left:-600px;text-align:center;}
+.search-content img{display:inline-block;margin:130px 0 100px 0}
+.search-box{width:780px;margin:0 auto}
+.search-box input[type="text"]{width:680px;height:55px;padding:0 10px;box-sizing:border-box;border:none;outline:0;background:#fff;font-size:18px;float:left}
+.search-box input[type="submit"]{display:inline-block;width:100px;line-height:55px;text-align:center;font-size:18px;color:#fff;background:#09882f;float:left;border:0;}
+.imau-main{width:1200px;margin:25px auto}
+.imau-news{width:420px;padding:15px;box-sizing:border-box;border:1px solid #ddd}
+.box-title span{font-size:18px;color:#353535;font-weight:700;padding-left:35px}
+.imau-news .box-title span{background:url(../images/news-icon.png) no-repeat left center;background-size:26px 100%}
+.box-title a{font-size:16px;color:#adadad;float:right}
+.news-list {}
+.news-list ul li{line-height:40px; border-bottom:1px dashed #ddd; white-space:nowrap; overflow:hidden;text-overflow:ellipsis;}
+.news-list ul li:last-child{border-bottom:none}
+.news-list ul li a{font-size:16px;color:#353535}
+.news-list ul li a:hover{color:#09882F}
+.top-right{width:755px}
+.mid-link{padding:15px;width:350px;box-sizing:border-box;border:1px solid #ddd}
+.mid-link a{display:block;width:150px;height:145px;box-sizing:border-box;padding-top:35px;text-align:center}
+.contact-box a:nth-child(odd),.mid-link a:nth-child(odd){float:left}
+.contact-box a:nth-child(even),.mid-link a:nth-child(even){float:right}
+.contact-box ul li a{display: block; width: 100%; height: auto; position: unset; cursor: pointer;}
+.mid-link a:first-child{background:#33a2e2;margin-bottom:18px}
+.mid-link a:nth-child(2){background:#3cb76a;margin-bottom:18px}
+.mid-link a:nth-child(3){background:#ea7a4e}
+.mid-link a:nth-child(4){background:#e79f13}
+.mid-link a img{display:inline-block;height:65px;margin-bottom:10px}
+.mid-link a p{font-size:16px;color:#fff}
+.contact-us{width:380px;padding:15px;box-sizing:border-box;border:1px solid #ddd}
+.contact-us .box-title a.title{float: left;font-size: 18px;color: #353535;font-weight: 700;padding-left: 35px;background:url(../images/contact-icon.png) no-repeat left center;background-size:26px 100%}
+.contact-box{margin-top:12px}
+.contact-box a{display:block;width:165px;height:128px;position:relative;margin-bottom:9px}
+.contact-box a img,.contact-hide{width:100%;height:100%}
+.contact-box a:nth-child(3),.contact-box a:nth-child(4){margin-bottom:0}
+.contact-hide{position:absolute;top:0;left:0;background:rgba(0,0,0,.6);text-align:center;line-height:128px;font-size:22px;color:#fff;display:block;}
+.contact-box a:hover .contact-hide{display:none;}
+.exam-guide{margin-top:20px;padding:15px;box-sizing:border-box;border:1px solid #ddd}
+.exam-guide .box-title span{background:url(images/guide-icon.png) no-repeat left center;background-size:26px 100%}
+.exam-guide-box a{display:block;width:215px;float:left;margin-right:30px;text-align:center}
+.exam-guide-box a:last-child{margin-right:0}
+.exam-guide-box a img{width:100%;height:170px}
+.exam-guide-box a span{font-size:16px;color:#353535;line-height:35px}
+.imau-main-bottom{margin-top:20px;padding:15px;width:100%;box-sizing:border-box;border:1px solid #ddd}
+.imau-main-bottom .box-title span{background:url(images/school-icon.png) no-repeat left center;background-size:26px 100%}
+.contact-us-info{margin-top: 10px}
+.contact-us-info img{width: 120px;height: 120px;float: left}
+.contact-us-info p{font-size: 22px;float: left;line-height: 35px}
+.school-dynamic{margin-top:10px}
+.school-dynamic .bd ul li{width:560px!important;padding:10px;box-sizing:border-box;float:left;background:#f8f8f8;margin-right:24px}
+.school-dynamic .bd ul li a{display:block}
+.school-dynamic .bd ul li a:after{content:'';display:block;clear:both}
+.school-dynamic .bd ul li a img{float:left;width:105px;height:105px}
+.school-dynamic-info{width:425px}
+.school-dynamic-info p,.school-dynamic-info span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.school-dynamic-info span{font-size:16px;color:#353535}
+.school-dynamic-info p{font-size:16px;color:#696969;margin-top:15px;margin-bottom:30px}
+.school-dynamic-info em{font-size:14px;color:#696969}
+.inside-link{margin-top:40px;margin-bottom:30px}
+.inside-link span{font-size:16px;color:#09882f}
+.inside-link a{display:inline-block;font-size:16px;color:#353535;margin-left:20px}
+.imau-bottom{width:100%;min-width:1200px;background:#09882F; background:#025287;}
+.imau-bottom-container{width:1200px;margin:0 auto;padding:20px 0}
+.imau-bottom-left{width:690px; margin-top:18px;}
+.imau-bottom-left p{font-size:16px;color:#fff;line-height:35px}
+
+
+/*------就业新闻列表employment-news-list.html------*/
+.go-employment{position: absolute; left: 0; bottom: 35px;}
+.go-recruit-student{position: absolute; right: 0; bottom: 35px;}
+.imau-position{font-size: 14px; color: #555; margin-bottom: 20px;}
+.imau-position a{font-size: 14px; color: #555;}
+.imau-position span{color: #21a919;}
+.imau-news-list-title{width: 160px; height: 45px; text-align: center; line-height: 45px; background: url("images/tab-icon-bg.png") no-repeat center; background-size: 100% 100%; font-size: 16px; color: #fff;}
+.imau-news-list-container{margin-top: 20px;}
+.imau-news-list-container ul li{padding-left: 20px; margin-bottom: 20px; background: url("images/list-title-icon.png") no-repeat left center;}
+.imau-news-list-container>ul li a{font-size: 16px; color: #555; display: inline-block; max-width: 70%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 35px;}
+.imau-news-list-container ul li a:hover{color: #957a5b;}
+.imau-news-list-container ul li span{float: right; font-size: 16px; color: #555;}
+.imau-pager{margin-top: 20px; margin-bottom: 20px; text-align: center;}
+.imau-pager ul{display: inline-block;}
+.imau-pager ul li{float: left; padding: 0 !important;width: 35px; height: 35px; text-align: center !important; line-height: 35px; border-radius: 5px; margin-right: 5px; background: #fff; border: 1px solid #ddd; box-sizing: border-box;}
+.imau-pager ul li a{display: block; width: 100%; height: 100%; font-size: 14px; color: #929292;}
+.imau-pager ul li:first-child{background: url("images/prev.png") no-repeat center;}
+.imau-pager ul li:last-child{background: url("images/next.png") no-repeat center;}
+.imau-pager ul li.active{background: #57c779; border: 1px solid #57c779;}
+.imau-pager ul li.active a{color: #fff;}
+.imau-employment-footer{width: 100%; min-width: 1200px; background: #fbfbfb;}
+.imau-employment-footer-container{width: 1200px; margin: 0 auto; padding: 20px 0; text-align: center;}
+.imau-employment-footer-container p{color: #616161; font-size: 16px;}
+.imau-employment-footer-container img{display: inline-block; margin-top: 10px;}
+
+/*------就业新闻详情employment-news-detail.html------*/
+.imau-news-detail{border-top: 1px dashed #21a919; padding-top: 40px;}
+.imau-news-detail-title{ padding-bottom: 35px; border-bottom: 1px solid #ddd;}
+.imau-news-detail-title h3{font-size: 24px; color: #555; font-weight: normal; margin-bottom: 20px;}
+.imau-news-detail-title p{font-size: 14px;color: #000000;}
+.imau-news-detail-content{margin-top: 20px; margin-bottom: 20px; min-height: 500px;}
+.imau-news-detail-content p{font-size: 14px; color: #353535; line-height: 25px;}
+
+/*-----招生新闻列表recruit-student-news-list.html-----*/
+.top-pic, .top-pic img{width: 100%; min-width: 1200px; height: 110px;}
+.recruit-student-news-tab{width: 230px;}
+.recruit-student-news-tab ul{margin-top: 20px;}
+.recruit-student-news-tab ul li{width: 190px; padding: 0 25px; box-sizing: border-box; height: 45px; line-height: 45px; background: #dfeeff; cursor: pointer; margin-bottom: 5px; font-size: 16px; color: #555;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;text-align: center;}
+.recruit-student-news-tab ul li:hover {width: 230px; color: #fff; background: #1b4d91; font-weight:bold; no-repeat 90% center; border-top-right-radius: 25px; border-bottom-right-radius: 25px;}
+.recruit-student-news-tab ul li:hover a { color:#fff;}
+.recruit-student-news-list{width: 940px; padding-top: 65px; margin: 0;}
+
+.link-line .link-left{width: 70%;display: inline-block;}
+.link-line .link-left h3{margin: 5px 0;}
+.link-line .link-left p{line-height: 25px;}
+.link-line .link-right{width: 25%; float: right; margin-top: 2%; margin-right: 2%;}
+.link-line .link-right img{width: 100%;}
+
+.student-link-left{display: inline-block; width: 60%; float: left;}
+.student-link-right{display: inline-block; width: 15%; float: left;}
+.student-link-right img{width: 100%}
+
+.zs-search-box{display: inline-block;width: 265px;height: 35px;position: relative;}
+.zs-search-box input{width: 100%;height: 100%;padding: 0 40px 0 10px;box-sizing: border-box;background: none;border: 1px solid #fff;outline: none;color: #fff;font-size: 16px}
+.zs-search-box a{display: inline-block;width: 35px;height: 35px;position:absolute;top: 0;right: 0;background: url("images/search-btn1.png") no-repeat center;}
+
+
+.lqjz-left {
+    width: 250px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.lqjz-right {
+    float: right;}
